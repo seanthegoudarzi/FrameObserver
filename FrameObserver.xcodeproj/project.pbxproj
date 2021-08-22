@@ -18,6 +18,7 @@
 		3707D09526D2E7D80081AE2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3707D09326D2E7D80081AE2E /* LaunchScreen.storyboard */; };
 		3707D09B26D2EA400081AE2E /* FrameObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3707D09A26D2EA400081AE2E /* FrameObserver.swift */; };
 		3707D09D26D2EABC0081AE2E /* FrameObserverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3707D09C26D2EABC0081AE2E /* FrameObserverView.swift */; };
+		3707D09F26D2EB140081AE2E /* FrameChangeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3707D09E26D2EB140081AE2E /* FrameChangeDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		3707D09626D2E7D80081AE2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3707D09A26D2EA400081AE2E /* FrameObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameObserver.swift; sourceTree = "<group>"; };
 		3707D09C26D2EABC0081AE2E /* FrameObserverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameObserverView.swift; sourceTree = "<group>"; };
+		3707D09E26D2EB140081AE2E /* FrameChangeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameChangeDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				3707D06C26D2E7BB0081AE2E /* Info.plist */,
 				3707D09A26D2EA400081AE2E /* FrameObserver.swift */,
 				3707D09C26D2EABC0081AE2E /* FrameObserverView.swift */,
+				3707D09E26D2EB140081AE2E /* FrameChangeDelegate.swift */,
 			);
 			path = FrameObserver;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3707D09F26D2EB140081AE2E /* FrameChangeDelegate.swift in Sources */,
 				3707D09D26D2EABC0081AE2E /* FrameObserverView.swift in Sources */,
 				3707D09B26D2EA400081AE2E /* FrameObserver.swift in Sources */,
 			);
