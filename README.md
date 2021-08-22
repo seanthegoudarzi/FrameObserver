@@ -67,7 +67,7 @@ override func viewDidLoad() {
 ```
 
 ## Other functions: 
-- `func removeObserver()`: Removes the current observer, if any.
+- `func removeObserver()`: Removes the current observer, if any. There's no need to call this in the `deinit` of your classes.
 - `func hasFrameObserver() -> Bool`: Returns true if the view has a frame observer.
 
 
