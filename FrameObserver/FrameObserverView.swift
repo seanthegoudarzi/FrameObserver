@@ -10,6 +10,8 @@ import UIKit
 
 internal class FrameObserverView: UIView {
 
+    weak var delegate: FrameChangeDelegate?
+
     /// The reference to the main view the observer was added to
     weak var mainView: UIView?
 
@@ -17,6 +19,9 @@ internal class FrameObserverView: UIView {
 
     override func layoutSublayers(of layer: CALayer) {
         super.layoutSublayers(of: layer)
+        if let mainView = mainView {
+            delegate?.frameChangeDelegateDidChange(for: mainView, self.frame, self.bounds)
+        }
         onChange?(self.frame, self.bounds)
     }
 
