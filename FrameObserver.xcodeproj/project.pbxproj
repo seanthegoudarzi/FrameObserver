@@ -16,6 +16,8 @@
 		3707D09026D2E7D60081AE2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3707D08E26D2E7D60081AE2E /* Main.storyboard */; };
 		3707D09226D2E7D80081AE2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3707D09126D2E7D80081AE2E /* Assets.xcassets */; };
 		3707D09526D2E7D80081AE2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3707D09326D2E7D80081AE2E /* LaunchScreen.storyboard */; };
+		3707D09B26D2EA400081AE2E /* FrameObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3707D09A26D2EA400081AE2E /* FrameObserver.swift */; };
+		3707D09D26D2EABC0081AE2E /* FrameObserverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3707D09C26D2EABC0081AE2E /* FrameObserverView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		3707D09126D2E7D80081AE2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3707D09426D2E7D80081AE2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3707D09626D2E7D80081AE2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3707D09A26D2EA400081AE2E /* FrameObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameObserver.swift; sourceTree = "<group>"; };
+		3707D09C26D2EABC0081AE2E /* FrameObserverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameObserverView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 			children = (
 				3707D06B26D2E7BB0081AE2E /* FrameObserver.h */,
 				3707D06C26D2E7BB0081AE2E /* Info.plist */,
+				3707D09A26D2EA400081AE2E /* FrameObserver.swift */,
+				3707D09C26D2EABC0081AE2E /* FrameObserverView.swift */,
 			);
 			path = FrameObserver;
 			sourceTree = "<group>";
@@ -201,6 +207,7 @@
 				TargetAttributes = {
 					3707D06726D2E7BB0081AE2E = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 					3707D07026D2E7BB0081AE2E = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -262,6 +269,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3707D09D26D2EABC0081AE2E /* FrameObserverView.swift in Sources */,
+				3707D09B26D2EA400081AE2E /* FrameObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +447,7 @@
 		3707D07D26D2E7BB0081AE2E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = A2F5967VAT;
@@ -454,6 +464,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.seangoudarzi.FrameObserver;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -462,6 +473,7 @@
 		3707D07E26D2E7BB0081AE2E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = A2F5967VAT;
@@ -486,6 +498,7 @@
 		3707D08026D2E7BB0081AE2E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A2F5967VAT;
 				INFOPLIST_FILE = FrameObserverTests/Info.plist;
@@ -504,6 +517,7 @@
 		3707D08126D2E7BB0081AE2E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A2F5967VAT;
 				INFOPLIST_FILE = FrameObserverTests/Info.plist;
