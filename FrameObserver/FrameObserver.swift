@@ -36,7 +36,7 @@ extension UIView {
             NSLayoutConstraint(item: frameObserverView, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottom, multiplier: 1, constant: 0),
         ])
 
-        frameObserverView.tag = 31415926535897932
+        frameObserverView.tag = 31415926
         frameObserverView.accessibilityIdentifier = "FrameObserverView"
         return frameObserverView
     }
@@ -57,7 +57,7 @@ extension UIView {
     private func currentFrameObserverView() -> FrameObserverView? {
         let subviews = self.subviews
         for subview in subviews {
-            if subview.tag == 31415926535897932, let frameObserverView = subview as? FrameObserverView {
+            if subview.tag == 31415926, let frameObserverView = subview as? FrameObserverView {
                 return frameObserverView
             }
         }
