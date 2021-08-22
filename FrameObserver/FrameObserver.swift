@@ -10,7 +10,7 @@ import UIKit
 
 extension UIView {
 
-    internal func addFrameObserver(with delegate: FrameChangeDelegate) {
+    public func addFrameObserver(with delegate: FrameChangeDelegate) {
         let frameObserverView = addFrameObserverView()
         frameObserverView.delegate = delegate
     }
@@ -41,16 +41,16 @@ extension UIView {
         return frameObserverView
     }
 
-    internal func addFrameObserver(with closure: @escaping (_ frame: CGRect, _ bounds: CGRect) -> Void) {
+    public func addFrameObserver(with closure: @escaping (_ frame: CGRect, _ bounds: CGRect) -> Void) {
         let frameObserverView = addFrameObserverView()
         frameObserverView.onChange = closure
     }
 
-    internal func removeObserver() {
+    public func removeObserver() {
         currentFrameObserverView()?.removeFromSuperview()
     }
 
-    internal func hasFrameObserver() -> Bool {
+    public func hasFrameObserver() -> Bool {
         return currentFrameObserverView() != nil
     }
 

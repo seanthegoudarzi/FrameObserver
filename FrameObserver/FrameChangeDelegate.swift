@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-protocol FrameChangeDelegate: AnyObject {
+public protocol FrameChangeDelegate: AnyObject {
 
     func frameChangeDelegateDidChange(for view: UIView, _ frame: CGRect, _ bounds: CGRect)
 
