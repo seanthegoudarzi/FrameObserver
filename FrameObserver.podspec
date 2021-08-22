@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "FrameObserver"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "FrameObserver will help you attach observers to UIView subclasses to get notifications for their frame change."
 
   # This description is used to generate tags and improve search results.
@@ -79,7 +79,7 @@ Attach observers to UIView subclasses to get notified when their frame changes.
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/seanthegoudarzi/FrameObserver", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/seanthegoudarzi/FrameObserver.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
