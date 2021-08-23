@@ -1,4 +1,4 @@
-FrameObserver is a framework that lets you attach observers to any `UIView` subclass and get notified when its size changes. It doesn't use any Method Swizzling or KVO so it'll be perfectly safe to use.
+FrameObserver is a framework that lets you attach observers to any `UIView` subclass and get notified when its size changes. It doesn't use any Method Swizzling or KVO so it'll be perfectly safe to use. It is especially useful when dealing with entities that require you to supply a `CGRect` to them, e.g `CAGradientLayer`.
 
 ## Installation
 
