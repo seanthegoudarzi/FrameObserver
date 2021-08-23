@@ -26,7 +26,7 @@ class FrameObserverTests: XCTestCase {
         viewController.view.addFrameObserver { _, _ in
         }
         XCTAssertEqual(viewController.view.hasFrameObserver(), true)
-        viewController.view.removeObserver()
+        viewController.view.removeFrameObserver()
         XCTAssertEqual(viewController.view.hasFrameObserver(), false)
     }
 

@@ -56,7 +56,7 @@ extension UIView {
         frameObserverView.onChange = closure
     }
 
-    public func removeObserver() {
+    public func removeFrameObserver() {
         currentFrameObserverView()?.removeFromSuperview()
     }
 
