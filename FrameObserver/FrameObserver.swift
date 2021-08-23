@@ -29,11 +29,21 @@ extension UIView {
         self.insertSubview(frameObserverView, at: 0)
 
         frameObserverView.translatesAutoresizingMaskIntoConstraints = false
+
+        let leading = NSLayoutConstraint(item: frameObserverView, attribute: .leading, relatedBy: .equal, toItem: self, attribute: .leading, multiplier: 1, constant: 0)
+        let top = NSLayoutConstraint(item: frameObserverView, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top, multiplier: 1, constant: 0)
+        let trailing = NSLayoutConstraint(item: frameObserverView, attribute: .trailing, relatedBy: .equal, toItem: self, attribute: .trailing, multiplier: 1, constant: 0)
+        let bottom = NSLayoutConstraint(item: frameObserverView, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottom, multiplier: 1, constant: 0)
+
+        [leading, top, trailing, bottom].forEach { constraint in
+            constraint.priority = UILayoutPriority(1)
+        }
+
         NSLayoutConstraint.activate([
-            NSLayoutConstraint(item: frameObserverView, attribute: .leading, relatedBy: .equal, toItem: self, attribute: .leading, multiplier: 1, constant: 0),
-            NSLayoutConstraint(item: frameObserverView, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top, multiplier: 1, constant: 0),
-            NSLayoutConstraint(item: frameObserverView, attribute: .trailing, relatedBy: .equal, toItem: self, attribute: .trailing, multiplier: 1, constant: 0),
-            NSLayoutConstraint(item: frameObserverView, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottom, multiplier: 1, constant: 0),
+            leading,
+            top,
+            trailing,
+            bottom,
         ])
 
         frameObserverView.tag = 31415926
